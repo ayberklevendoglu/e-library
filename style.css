@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+:root {
+  --color--dark: #053b50;
+  --color--lighter: #176b87;
+  --color--teal: #64ccc5;
+  --color--ee: #eeeeee;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--color--ee);
+}
+
+.btn {
+  color: #fff;
+  background-color: var(--color--dark);
+  padding: 10px 25px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  font-family: inherit;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: var(--color--lighter);
+}
+.btn-add {
+  background-color: var(--color--lighter);
+  color: var(--color--ee);
+  font-weight: 500;
+}
+.btn-add:hover {
+  background-color: var(--color--teal);
+}
+/* navbar */
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 10rem;
+  box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+#navbar .logo {
+  font-family: inherit;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color--dark);
+}
+/* header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0;
+  margin: 0 10rem;
+  font-family: inherit;
+  color: black;
+  border-bottom: 1px solid #ccc;
+}
+/* books */
+.books-grid {
+  padding: 2rem 10rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+.book-card {
+  text-align: center;
+  border: 2px solid var(--color--dark);
+  border-radius: 5px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  font-size: 20px;
+  font-weight: 500;
+}
+.card-btns {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+.card-btn {
+  border: none;
+  color: var(--color--lighter);
+  font-size: 1rem;
+  cursor: pointer;
+}
+/* dialog */
+#dialog {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 5px solid var(--color--lighter);
+  border-radius: 1rem;
+}
+#dialog form{
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  padding: 2rem;
+  
+}
+#dialog form label{
+  font-weight: 500;
+  font-size: 18px;
+}
+#dialog form input{
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid var(--color--dark);
+  border-radius: 5px;
+}
+#dialog form input:focus{
+  outline: none;
+  border: 2px solid var(--color--lighter);
+}
+
+/* footer */
+footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+footer i {
+  font-size: 1.2rem;
+  color: var(--color--lighter);
+}
+footer i:hover {
+  color: var(--color--dark);
+}
